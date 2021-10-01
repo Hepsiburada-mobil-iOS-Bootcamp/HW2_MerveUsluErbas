@@ -50,7 +50,7 @@ extension PermissionViewController: PermissionViewDelegate{
    
     
     func permissionButtonClicked(sender: UIButton, type : String) {
-        print("login Button Clicked Permission")
+        
        
         switch type {
         case "Camera":
