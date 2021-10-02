@@ -9,10 +9,9 @@
 /* Begin PBXBuildFile section */
 		520E1D432706ED8100D7D5E5 /* PermissionViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520E1D422706ED8100D7D5E5 /* PermissionViewContainer.swift */; };
 		520E1D452706F57E00D7D5E5 /* ButtonColorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520E1D442706F57E00D7D5E5 /* ButtonColorType.swift */; };
-		520E1D472706F5A000D7D5E5 /* ButtonTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520E1D462706F5A000D7D5E5 /* ButtonTheme.swift */; };
 		5235695527064D6D0040BEFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235695427064D6D0040BEFC /* AppDelegate.swift */; };
 		5235695727064D6D0040BEFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235695627064D6D0040BEFC /* SceneDelegate.swift */; };
-		5235695927064D6D0040BEFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235695827064D6D0040BEFC /* ViewController.swift */; };
+		5235695927064D6D0040BEFC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235695827064D6D0040BEFC /* MainViewController.swift */; };
 		5235695C27064D6D0040BEFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5235695A27064D6D0040BEFC /* Main.storyboard */; };
 		5235695E27064D6E0040BEFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5235695D27064D6E0040BEFC /* Assets.xcassets */; };
 		5235696127064D6E0040BEFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5235695F27064D6E0040BEFC /* LaunchScreen.storyboard */; };
@@ -26,11 +25,10 @@
 /* Begin PBXFileReference section */
 		520E1D422706ED8100D7D5E5 /* PermissionViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionViewContainer.swift; sourceTree = "<group>"; };
 		520E1D442706F57E00D7D5E5 /* ButtonColorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonColorType.swift; sourceTree = "<group>"; };
-		520E1D462706F5A000D7D5E5 /* ButtonTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTheme.swift; sourceTree = "<group>"; };
 		5235695127064D6D0040BEFC /* PermissionProjectMerveStyle2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PermissionProjectMerveStyle2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5235695427064D6D0040BEFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5235695627064D6D0040BEFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5235695827064D6D0040BEFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5235695827064D6D0040BEFC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5235695B27064D6D0040BEFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5235695D27064D6E0040BEFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5235696027064D6E0040BEFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -72,21 +70,17 @@
 		5235695327064D6D0040BEFC /* PermissionProjectMerveStyle2 */ = {
 			isa = PBXGroup;
 			children = (
+				528D5CC72708F1C70077715E /* Utilities */,
+				528D5CC62708ED9B0077715E /* ComponentBlocks */,
+				528D5CC52708ECF80077715E /* UIElementsGenerationFunctions */,
+				528D5CC42708DC320077715E /* Views */,
 				5235696827064D770040BEFC /* Extensions */,
 				5235695427064D6D0040BEFC /* AppDelegate.swift */,
 				5235695627064D6D0040BEFC /* SceneDelegate.swift */,
-				5235695827064D6D0040BEFC /* ViewController.swift */,
 				5235695A27064D6D0040BEFC /* Main.storyboard */,
 				5235695D27064D6E0040BEFC /* Assets.xcassets */,
 				5235695F27064D6E0040BEFC /* LaunchScreen.storyboard */,
 				5235696227064D6E0040BEFC /* Info.plist */,
-				5235696B27064DC60040BEFC /* Factories.swift */,
-				5235696D27064DDD0040BEFC /* FontManager.swift */,
-				5235696F27064DFC0040BEFC /* PhotoCameraButtons.swift */,
-				5235697127065B170040BEFC /* PermissionViewController.swift */,
-				520E1D422706ED8100D7D5E5 /* PermissionViewContainer.swift */,
-				520E1D442706F57E00D7D5E5 /* ButtonColorType.swift */,
-				520E1D462706F5A000D7D5E5 /* ButtonTheme.swift */,
 			);
 			path = PermissionProjectMerveStyle2;
 			sourceTree = "<group>";
@@ -97,6 +91,41 @@
 				5235696927064D970040BEFC /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		528D5CC42708DC320077715E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5235695827064D6D0040BEFC /* MainViewController.swift */,
+				5235697127065B170040BEFC /* PermissionViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		528D5CC52708ECF80077715E /* UIElementsGenerationFunctions */ = {
+			isa = PBXGroup;
+			children = (
+				5235696B27064DC60040BEFC /* Factories.swift */,
+			);
+			path = UIElementsGenerationFunctions;
+			sourceTree = "<group>";
+		};
+		528D5CC62708ED9B0077715E /* ComponentBlocks */ = {
+			isa = PBXGroup;
+			children = (
+				5235696F27064DFC0040BEFC /* PhotoCameraButtons.swift */,
+				520E1D422706ED8100D7D5E5 /* PermissionViewContainer.swift */,
+			);
+			path = ComponentBlocks;
+			sourceTree = "<group>";
+		};
+		528D5CC72708F1C70077715E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5235696D27064DDD0040BEFC /* FontManager.swift */,
+				520E1D442706F57E00D7D5E5 /* ButtonColorType.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,9 +199,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5235695927064D6D0040BEFC /* ViewController.swift in Sources */,
+				5235695927064D6D0040BEFC /* MainViewController.swift in Sources */,
 				5235697227065B170040BEFC /* PermissionViewController.swift in Sources */,
-				520E1D472706F5A000D7D5E5 /* ButtonTheme.swift in Sources */,
 				5235695527064D6D0040BEFC /* AppDelegate.swift in Sources */,
 				520E1D452706F57E00D7D5E5 /* ButtonColorType.swift in Sources */,
 				5235695727064D6D0040BEFC /* SceneDelegate.swift in Sources */,

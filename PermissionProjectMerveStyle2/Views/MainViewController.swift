@@ -7,25 +7,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class MainViewController: UIViewController {
+    
     private var photoCameraButtons : PhotoCameraButtons!
-
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         addButtonFunc()
     }
-
-
-
-
-
-
-
-
+    
     private func addButtonFunc () {
-      photoCameraButtons = PhotoCameraButtons()
+        
+        photoCameraButtons = PhotoCameraButtons()
         photoCameraButtons.delegate = self
         photoCameraButtons.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(photoCameraButtons)
@@ -33,18 +26,18 @@ class ViewController: UIViewController {
             photoCameraButtons.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             photoCameraButtons.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
-
+        
     }
-
-
+    
+    
 }
 
-extension ViewController: HomeViewDelegate{
+extension MainViewController: HomeViewDelegate{
     func cameraPhotoButtonSelected(sender: UIButton) {
         let permissionView = PermissionViewController()
         permissionView.buttonType = (sender.titleLabel?.text)!
         permissionView.view.backgroundColor = UIColor.clear
-               self.present(permissionView, animated: true)
+        self.present(permissionView, animated: true)
     }
 }
 

@@ -35,20 +35,20 @@ class PhotoCameraButtons : UIView {
         cameraButton.addTarget(self, action: #selector(cameraPhotoSelected), for: .touchUpInside)
         photosButton.addTarget(self, action: #selector(cameraPhotoSelected), for: .touchUpInside)
         NSLayoutConstraint.activate([
-        stackView.leadingAnchor.constraint(equalTo: leadingAnchor),
-        stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
-        stackView.topAnchor.constraint(equalTo: topAnchor),
-        stackView.bottomAnchor.constraint(equalTo: bottomAnchor)])
-
+            stackView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            stackView.topAnchor.constraint(equalTo: topAnchor),
+            stackView.bottomAnchor.constraint(equalTo: bottomAnchor)])
+        
     }
     
     
     @objc func cameraPhotoSelected(sender: UIButton) {
         if let delegate = delegate {
             delegate.cameraPhotoButtonSelected(sender: sender)
+        }
     }
-     }
-   
+    
 }
 
 
