@@ -7,23 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		520E1D432706ED8100D7D5E5 /* PermissionViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520E1D422706ED8100D7D5E5 /* PermissionViewContainer.swift */; };
+		520E1D452706F57E00D7D5E5 /* ButtonColorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520E1D442706F57E00D7D5E5 /* ButtonColorType.swift */; };
 		5235695527064D6D0040BEFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235695427064D6D0040BEFC /* AppDelegate.swift */; };
 		5235695727064D6D0040BEFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235695627064D6D0040BEFC /* SceneDelegate.swift */; };
-		5235695927064D6D0040BEFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235695827064D6D0040BEFC /* ViewController.swift */; };
+		5235695927064D6D0040BEFC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235695827064D6D0040BEFC /* MainViewController.swift */; };
 		5235695C27064D6D0040BEFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5235695A27064D6D0040BEFC /* Main.storyboard */; };
 		5235695E27064D6E0040BEFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5235695D27064D6E0040BEFC /* Assets.xcassets */; };
 		5235696127064D6E0040BEFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5235695F27064D6E0040BEFC /* LaunchScreen.storyboard */; };
+		5235696A27064D970040BEFC /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235696927064D970040BEFC /* UIColor+Extensions.swift */; };
+		5235696C27064DC60040BEFC /* Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235696B27064DC60040BEFC /* Factories.swift */; };
+		5235696E27064DDD0040BEFC /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235696D27064DDD0040BEFC /* FontManager.swift */; };
+		5235697027064DFC0040BEFC /* PhotoCameraButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235696F27064DFC0040BEFC /* PhotoCameraButtons.swift */; };
+		5235697227065B170040BEFC /* PermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235697127065B170040BEFC /* PermissionViewController.swift */; };
+		529F736A270986D800F1535E /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529F7369270986D800F1535E /* BaseView.swift */; };
+		529F736D270988FF00F1535E /* PermissionViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529F736C270988FF00F1535E /* PermissionViewProtocol.swift */; };
+		529F736F270989FC00F1535E /* MainViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529F736E270989FC00F1535E /* MainViewProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		520E1D422706ED8100D7D5E5 /* PermissionViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionViewContainer.swift; sourceTree = "<group>"; };
+		520E1D442706F57E00D7D5E5 /* ButtonColorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonColorType.swift; sourceTree = "<group>"; };
 		5235695127064D6D0040BEFC /* PermissionProjectMerveStyle2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PermissionProjectMerveStyle2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5235695427064D6D0040BEFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5235695627064D6D0040BEFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5235695827064D6D0040BEFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5235695827064D6D0040BEFC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5235695B27064D6D0040BEFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5235695D27064D6E0040BEFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5235696027064D6E0040BEFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5235696227064D6E0040BEFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5235696927064D970040BEFC /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		5235696B27064DC60040BEFC /* Factories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factories.swift; sourceTree = "<group>"; };
+		5235696D27064DDD0040BEFC /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
+		5235696F27064DFC0040BEFC /* PhotoCameraButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCameraButtons.swift; sourceTree = "<group>"; };
+		5235697127065B170040BEFC /* PermissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionViewController.swift; sourceTree = "<group>"; };
+		529F7369270986D800F1535E /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		529F736C270988FF00F1535E /* PermissionViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionViewProtocol.swift; sourceTree = "<group>"; };
+		529F736E270989FC00F1535E /* MainViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +76,73 @@
 		5235695327064D6D0040BEFC /* PermissionProjectMerveStyle2 */ = {
 			isa = PBXGroup;
 			children = (
+				529F736B270988EF00F1535E /* Protocols */,
+				528D5CC72708F1C70077715E /* Utilities */,
+				528D5CC62708ED9B0077715E /* ComponentBlocks */,
+				528D5CC52708ECF80077715E /* UIElementsGenerationFunctions */,
+				528D5CC42708DC320077715E /* Views */,
+				5235696827064D770040BEFC /* Extensions */,
 				5235695427064D6D0040BEFC /* AppDelegate.swift */,
 				5235695627064D6D0040BEFC /* SceneDelegate.swift */,
-				5235695827064D6D0040BEFC /* ViewController.swift */,
 				5235695A27064D6D0040BEFC /* Main.storyboard */,
 				5235695D27064D6E0040BEFC /* Assets.xcassets */,
 				5235695F27064D6E0040BEFC /* LaunchScreen.storyboard */,
 				5235696227064D6E0040BEFC /* Info.plist */,
 			);
 			path = PermissionProjectMerveStyle2;
+			sourceTree = "<group>";
+		};
+		5235696827064D770040BEFC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5235696927064D970040BEFC /* UIColor+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		528D5CC42708DC320077715E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5235695827064D6D0040BEFC /* MainViewController.swift */,
+				5235697127065B170040BEFC /* PermissionViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		528D5CC52708ECF80077715E /* UIElementsGenerationFunctions */ = {
+			isa = PBXGroup;
+			children = (
+				5235696B27064DC60040BEFC /* Factories.swift */,
+			);
+			path = UIElementsGenerationFunctions;
+			sourceTree = "<group>";
+		};
+		528D5CC62708ED9B0077715E /* ComponentBlocks */ = {
+			isa = PBXGroup;
+			children = (
+				529F7369270986D800F1535E /* BaseView.swift */,
+				5235696F27064DFC0040BEFC /* PhotoCameraButtons.swift */,
+				520E1D422706ED8100D7D5E5 /* PermissionViewContainer.swift */,
+			);
+			path = ComponentBlocks;
+			sourceTree = "<group>";
+		};
+		528D5CC72708F1C70077715E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5235696D27064DDD0040BEFC /* FontManager.swift */,
+				520E1D442706F57E00D7D5E5 /* ButtonColorType.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		529F736B270988EF00F1535E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				529F736C270988FF00F1535E /* PermissionViewProtocol.swift */,
+				529F736E270989FC00F1535E /* MainViewProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +216,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5235695927064D6D0040BEFC /* ViewController.swift in Sources */,
+				5235695927064D6D0040BEFC /* MainViewController.swift in Sources */,
+				5235697227065B170040BEFC /* PermissionViewController.swift in Sources */,
 				5235695527064D6D0040BEFC /* AppDelegate.swift in Sources */,
+				520E1D452706F57E00D7D5E5 /* ButtonColorType.swift in Sources */,
 				5235695727064D6D0040BEFC /* SceneDelegate.swift in Sources */,
+				5235696C27064DC60040BEFC /* Factories.swift in Sources */,
+				5235697027064DFC0040BEFC /* PhotoCameraButtons.swift in Sources */,
+				5235696E27064DDD0040BEFC /* FontManager.swift in Sources */,
+				520E1D432706ED8100D7D5E5 /* PermissionViewContainer.swift in Sources */,
+				529F736F270989FC00F1535E /* MainViewProtocol.swift in Sources */,
+				529F736D270988FF00F1535E /* PermissionViewProtocol.swift in Sources */,
+				529F736A270986D800F1535E /* BaseView.swift in Sources */,
+				5235696A27064D970040BEFC /* UIColor+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
