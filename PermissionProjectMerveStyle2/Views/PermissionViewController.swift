@@ -22,6 +22,7 @@ class PermissionViewController: UIViewController, UIImagePickerControllerDelegat
     
     func setupView() {
         
+        //permissionViewContainer Object is created with buttontype Parameter which is coming from MainViewController.
         permissionViewContainer = PermissionViewContainer(type: buttonType)
         view.addSubview(permissionViewContainer)
         permissionViewContainer.delegate = self
@@ -37,16 +38,17 @@ class PermissionViewController: UIViewController, UIImagePickerControllerDelegat
     
 }
 
-extension PermissionViewController: PermissionViewDelegate {
+extension PermissionViewController: PermissionViewProtocol {
     
+    //The function is called when negative Not Now button is clicked.
     func noPermissionButtonClicked(sender: UIButton) {
         DispatchQueue.main.async {
             self.dismiss(animated: true, completion: nil)
         }
     }
     
+    //The function is called when positive OK button is clicked.
     func permissionButtonClicked(sender: UIButton, type : String) {
-        
         switch type {
         case "Camera":
             AVCaptureDevice.requestAccess(for: .video) { granted in
@@ -67,7 +69,6 @@ extension PermissionViewController: PermissionViewDelegate {
             }
         default:
             return
-            
         }
         
     }

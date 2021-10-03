@@ -20,6 +20,9 @@
 		5235696E27064DDD0040BEFC /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235696D27064DDD0040BEFC /* FontManager.swift */; };
 		5235697027064DFC0040BEFC /* PhotoCameraButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235696F27064DFC0040BEFC /* PhotoCameraButtons.swift */; };
 		5235697227065B170040BEFC /* PermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235697127065B170040BEFC /* PermissionViewController.swift */; };
+		529F736A270986D800F1535E /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529F7369270986D800F1535E /* BaseView.swift */; };
+		529F736D270988FF00F1535E /* PermissionViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529F736C270988FF00F1535E /* PermissionViewProtocol.swift */; };
+		529F736F270989FC00F1535E /* MainViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529F736E270989FC00F1535E /* MainViewProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		5235696D27064DDD0040BEFC /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
 		5235696F27064DFC0040BEFC /* PhotoCameraButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCameraButtons.swift; sourceTree = "<group>"; };
 		5235697127065B170040BEFC /* PermissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionViewController.swift; sourceTree = "<group>"; };
+		529F7369270986D800F1535E /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		529F736C270988FF00F1535E /* PermissionViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionViewProtocol.swift; sourceTree = "<group>"; };
+		529F736E270989FC00F1535E /* MainViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,7 @@
 		5235695327064D6D0040BEFC /* PermissionProjectMerveStyle2 */ = {
 			isa = PBXGroup;
 			children = (
+				529F736B270988EF00F1535E /* Protocols */,
 				528D5CC72708F1C70077715E /* Utilities */,
 				528D5CC62708ED9B0077715E /* ComponentBlocks */,
 				528D5CC52708ECF80077715E /* UIElementsGenerationFunctions */,
@@ -113,6 +120,7 @@
 		528D5CC62708ED9B0077715E /* ComponentBlocks */ = {
 			isa = PBXGroup;
 			children = (
+				529F7369270986D800F1535E /* BaseView.swift */,
 				5235696F27064DFC0040BEFC /* PhotoCameraButtons.swift */,
 				520E1D422706ED8100D7D5E5 /* PermissionViewContainer.swift */,
 			);
@@ -126,6 +134,15 @@
 				520E1D442706F57E00D7D5E5 /* ButtonColorType.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		529F736B270988EF00F1535E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				529F736C270988FF00F1535E /* PermissionViewProtocol.swift */,
+				529F736E270989FC00F1535E /* MainViewProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +225,9 @@
 				5235697027064DFC0040BEFC /* PhotoCameraButtons.swift in Sources */,
 				5235696E27064DDD0040BEFC /* FontManager.swift in Sources */,
 				520E1D432706ED8100D7D5E5 /* PermissionViewContainer.swift in Sources */,
+				529F736F270989FC00F1535E /* MainViewProtocol.swift in Sources */,
+				529F736D270988FF00F1535E /* PermissionViewProtocol.swift in Sources */,
+				529F736A270986D800F1535E /* BaseView.swift in Sources */,
 				5235696A27064D970040BEFC /* UIColor+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

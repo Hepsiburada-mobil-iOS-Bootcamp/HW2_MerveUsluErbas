@@ -7,8 +7,10 @@
 
 import UIKit
 
+
 class MainViewController: UIViewController {
     
+    //photoCameraButtons Object is created.
     private var photoCameraButtons : PhotoCameraButtons!
     
     override func viewDidLoad() {
@@ -21,6 +23,7 @@ class MainViewController: UIViewController {
         photoCameraButtons = PhotoCameraButtons()
         photoCameraButtons.delegate = self
         photoCameraButtons.translatesAutoresizingMaskIntoConstraints = false
+        //Two buttons container is inserted into mainView.
         view.addSubview(photoCameraButtons)
         NSLayoutConstraint.activate([
             photoCameraButtons.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -32,7 +35,8 @@ class MainViewController: UIViewController {
     
 }
 
-extension MainViewController: HomeViewDelegate{
+extension MainViewController: MainViewProtocol {
+    //The function is called when Camera or Photos button is clicked.
     func cameraPhotoButtonSelected(sender: UIButton) {
         let permissionView = PermissionViewController()
         permissionView.buttonType = (sender.titleLabel?.text)!

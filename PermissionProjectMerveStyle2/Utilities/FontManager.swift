@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+// Enum FontManager is created for different fonts used.
 enum FontManager {
     
     var value : UIFont {

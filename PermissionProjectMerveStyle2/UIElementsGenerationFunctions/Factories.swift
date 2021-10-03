@@ -2,14 +2,13 @@
 
 import UIKit
 
-public func makeImageView(named: String) -> UIImageView {
+
+// It contains the creation functions of all UI Elements used.
+func makeImageView(named: String) -> UIImageView {
     let view = UIImageView()
     view.translatesAutoresizingMaskIntoConstraints = false
     view.contentMode = .scaleAspectFill
     view.image = UIImage(named: named)
-    //    let heightAnchorConstraint = view.heightAnchor.constraint(equalTo: view.widthAnchor)
-    //    heightAnchorConstraint.priority = .defaultHigh
-    //    heightAnchorConstraint.isActive = true
     view.setContentHuggingPriority(UILayoutPriority(rawValue: 249), for: .vertical)
     view.setContentCompressionResistancePriority(UILayoutPriority(rawValue: 749), for: .vertical)
     
@@ -39,7 +38,6 @@ func makeButton(with text:String, fontAndSize:UIFont, type: ButtonColorType, col
     button.layer.shadowRadius = 4
     button.layer.shadowOpacity = 0.4
     button.layer.cornerRadius = 6
-    //button.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
     button.heightAnchor.constraint(equalToConstant: 50).isActive = true
     button.widthAnchor.constraint(equalToConstant: 120).isActive = true
     
@@ -47,7 +45,6 @@ func makeButton(with text:String, fontAndSize:UIFont, type: ButtonColorType, col
 }
 
 func makeContainer() -> UIView {
-    
     
     let containerView = UIView()
     containerView.translatesAutoresizingMaskIntoConstraints = false
@@ -64,9 +61,7 @@ func makeStackView(withOrientation axis: NSLayoutConstraint.Axis) -> UIStackView
     stackView.translatesAutoresizingMaskIntoConstraints = false
     stackView.axis = axis
     stackView.distribution = .fill
-    //stackView.alignment = .fill
     stackView.spacing = 8.0
-    
     stackView.alignment = .center
     
     return stackView
